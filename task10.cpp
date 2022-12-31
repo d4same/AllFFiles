@@ -1,53 +1,16 @@
 #include<iostream>
 using namespace std;
-void ticket();
 main()
 {
- system("cls");
- ticket();
-}
- void ticket()
-{
- while(true)
-{
- string country;
- int ticket;
- int discount;
- int payableamount;
- cout<<"enter the name of country"<<endl;
- cin>>country;
- cout<<"price of ticket in dollar"<<endl;
- cin>>ticket;
- 
- if(country=="pakistan")
- {
-  discount=ticket*5/100;
-  payableamount=ticket-discount;
-  cout<<"price with discount"<<payableamount;
- }
- if(country=="ireland")
- {
-  discount=ticket*10/100;
-  payableamount=ticket-discount;
-  cout<<"price with discount"<<payableamount;
- }
- if(country=="india")
- {
-  discount=ticket*20/100;
-  payableamount=ticket-discount;
-  cout<<"price with discount"<<payableamount;
- }
- if(country=="england")
- {
-  discount=ticket*30/100;
-  payableamount=ticket-discount;
-  cout<<"price with discount"<<payableamount;
- }
- if(country=="canada")
- {
-  discount=ticket*45/100;
-  payableamount=ticket-discount;
-  cout<<"price with discount"<<payableamount;
- }
-}
+cout<<"          8888888888  888	88888  "<<endl;
+cout<<"        88      88   88 88       88  88  "<<endl;
+cout<<"          8888  88  88   88      888888    "<<endl;
+cout<<"             88 88 888888888     88   88    "<<endl;
+cout<<"       88888888 88 88     88     88    888888   "<<endl;
+cout<<"                                                "<<endl;
+cout<<"       88 88   88    888    88888        888888  "<<endl;
+cout<<"       88 88   88   88 88  88   88      88        "<<endl;
+cout<<"       88 888  88 88    88 888888        8888     "<<endl;
+cout<<"        888 888  888888888 88    88         88    "<<endl;
+cout<<"         88 88   88     88 88     88888888888     "<<endl;
 }
