@@ -1,33 +1,49 @@
 #include<iostream>
 using namespace std;
-void add();
-void add1();
+float volume(float length, float height, float width,char unit);
 main()
 {
-add();
-add1();
+    system("cls");
+    float height;
+    float length;
+    float width;
+    char unit;
+    float volume1;
+    float volume2;
+    cout<<"enter length"<<endl;
+    cin>>length;
+    cout<<"enter height"<<endl;
+    cin>>height;
+    cout<<"enter width"<<endl;
+    cin>>width;
+    cout<<"enter unit m for milli, c for centimeter, m for meter, and km for kilometer"<<endl;
+    cin>>unit;
+    volume1=volume(length,height,width,unit);
+   cout<<"pyramidvolume is ..."<<volume1<<"cubic"<<unit;
+
 }
-void add()
+float volume(float length,float height,float width,char unit)
 {
- int number1;
- int number2;
- int sum;
- cout<<"enter first number"<<endl;
- cin>>number1;
- cout<<"enter second number"<<endl;
- cin>>number2;
- sum=number1+number2;
- cout<<"sum..."<<sum<<endl;
-}
-void add1()
-{
-   int number3;
-   int number4;
-   int sum1;
-   cout<<"enter number"<<endl;
-   cin>>number3;
-   cout<<"enter number"<<endl;
-   cin>>number4;
-  sum1=number3+number4;
-  cout<<"sum is.."<<sum1;
+    float volume2;
+    float volume3;
+    float volume4;
+    float volume5;
+    volume2=(length*height*width) /3;
+     if(unit=='c')
+     {
+        volume3=volume2*1000000;
+        return volume3;
+     }
+     if(unit=='k')
+     {
+        volume3=volume2/1000000000;
+        return volume3;
+     }
+     if(unit=='m')
+     {
+        volume3=volume2*1000000000;
+        return volume3;
+     }
+    return 0; 
+
 }
